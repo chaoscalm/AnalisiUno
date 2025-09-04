@@ -77,21 +77,28 @@ Releases (PDF format) are available at the github repository: <https://github.co
 
 # dependencies on Linux "Debian based distros"
 
+```bash
 sudo apt-get install latexmk texlive texlive-fonts-extra texlive-fonts-recommended texlive-lang-italian texlive-latex-extra texlive-science
+```
 
 # compiling 
 
 files `README.md` and `docs/index.html` are created from sources with the command:
 
-    bash make-docs.sh
+```bash
+bash make-docs.sh
+```
 
 the `pdf` file can be obtained with the command:
 
-    latexmk --pdf AnalisiUno
+```bash
+latexmk --pdf AnalisiUno
+```
 
 The `Makefile` should automate the previous commands.
 
 # compilation with docker
 
-    docker run -it -w /app -v "${PWD}:/app" ghcr.io/xu-cheng/texlive-full latexmk --pdf AnalisiUno -file-line-error -halt-on-error -interaction=nonstopmode
-
+```bash
+docker run -it -w /app -v "${PWD}:/app" ghcr.io/xu-cheng/texlive-full latexmk --pdf AnalisiUno -file-line-error -halt-on-error -interaction=nonstopmode
+```
