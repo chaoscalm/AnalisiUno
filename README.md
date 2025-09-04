@@ -70,9 +70,14 @@ LaTeX.
 Il materiale è costantemente in evoluzione 
 e certamente contiene errori e incoerenze. Ogni suggerimento o commento è 
 benvenuto! 
+
 # release
 
 Releases (PDF format) are available at the github repository: <https://github.com/paolini/AnalisiUno/tags>
+
+# dependencies on Linux "Debian based distros"
+
+sudo apt-get install latexmk texlive texlive-fonts-extra texlive-fonts-recommended texlive-lang-italian texlive-latex-extra texlive-science
 
 # compiling 
 
