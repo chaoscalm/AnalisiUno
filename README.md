@@ -92,6 +92,12 @@ the `pdf` file can be obtained with the command:
 
 The `Makefile` should automate the previous commands.
 
+# dependencies on Linux "Debian based distros"
+
+```bash
+sudo apt-get install latexmk texlive texlive-fonts-extra texlive-fonts-recommended texlive-lang-italian texlive-latex-extra texlive-science
+```
+
 # compilation with docker
 
     docker run -it -w /app -v "${PWD}:/app" ghcr.io/xu-cheng/texlive-full latexmk --pdf AnalisiUno -file-line-error -halt-on-error -interaction=nonstopmode
